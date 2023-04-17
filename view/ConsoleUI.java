@@ -1,7 +1,6 @@
 package view;
 
 import presenter.Presenter;
-import view.plannerUI.commands.plannerMenu.chooseEvent.ChooseEvent;
 import view.plannerUI.menu.MainMenu;
 import view.plannerUI.menu.Menu;
 import view.plannerUI.menu.PlannerMenu;
@@ -9,9 +8,9 @@ import view.plannerUI.menu.PlannerMenu;
 import java.util.Scanner;
 
 public class ConsoleUI implements View {
-    protected Presenter presenter;
-    protected Scanner scanner;
-    protected boolean status;
+    private Presenter presenter;
+    private final Scanner scanner;
+    private boolean status;
 
     public ConsoleUI() {
         this.scanner = new Scanner(System.in);

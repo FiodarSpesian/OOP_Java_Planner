@@ -5,9 +5,9 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Event implements Serializable {
-    String description;
-    LocalDateTime dateTime;
-    String address;
+    private String description;
+    private LocalDateTime dateTime;
+    private String address;
 
     public Event(String description) {
         this.description = description;
